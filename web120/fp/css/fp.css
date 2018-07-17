@@ -1,0 +1,386 @@
+/* BIG Styles */
+
+/* START GLOBAL RULES */
+html{
+    margin: 0;
+    padding: 0;
+	background: teal;
+}
+body{
+    margin: 0 auto;
+    margin-right: auto;
+	margin-left: auto;
+    padding: 2.5% 2.5% 0;
+    width: 80%;
+    font: 100% Verdana, Geneva, sans-serif;
+    background: rgb(242,133,0);
+    line-height: 1.8;
+    border-bottom: 10px solid gold;
+}
+div.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    background: purple;
+    overflow: auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0em .5em 0em;
+	padding: 0;
+}
+h1{
+    font-family: "Trajan";
+    font-size:5em;
+    font-weight: normal;
+    margin: 1em 0 .4em;
+	color: purple;
+} 
+header {
+    background: turquoise;
+}
+header h1 {
+    text-align: center;
+    margin-top: 1em;
+    float: left;
+    width: 70%
+}
+header img {
+    float: right;
+    width: 30%;
+}
+h2.subheader{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.6em;
+    top: 1.6em;
+    right: 1.6em;
+    text-align: center;
+    float: left;
+    width: inherit;
+}
+h3 {
+    font-size: 1.2em;
+    color: white;
+}
+h4 {
+    clear: both;
+    background: purple;
+    padding:1.3em;
+    width: 20em;
+    color: white;
+    text-align: center;
+    float: left;
+}
+h5{
+    font-family: Arial, sans-serif;
+    font: 1.2em; 
+    margin: 0;
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    width: 90%;
+    margin: 0em 1em 1em;
+}
+a {
+	color: rgb(184, 126, 84);
+    text-decoration: none;
+}
+a:hover {
+	color: rgb(120, 97, 55);
+    text-decoration: underline;
+}
+section a {
+    font-size: 1.3em;
+    text-align: center;
+    color: azure;
+    font-family: "Slate", sans-serif; 
+}
+dt {
+	font-style: italic;
+	font-size:1.2em;
+}
+dd {
+	margin-bottom: 1.4em;
+}
+section {
+    float: left;
+    width: 70%;
+    margin: 1em;
+    margin-bottom: .1em;
+    padding: 0.5em;
+    color: lightcyan;
+    background: rgb(242,133,0);
+    border: 2px solid #666;
+    text-align: center;
+    line-height: 2em;
+}
+section.main {
+    width: 45%;
+    line-height: 3em;
+}
+section.socialdesktop {
+    width: 43%;
+    display: inline-block;
+    margin: 1em .2em 1em;
+    }
+section.socialsmallscreen {
+    width: 90%;
+    margin: 1em .2em 1em;
+    }
+.fullwidth {
+    width: 100%;
+}
+aside {
+	padding: .5em;
+	background: turquoise;
+	color: white;
+    margin: 1em;
+	margin-bottom: .1em;
+    float: right;
+    width: 20%;
+}
+section.turqtop, section.turqbottom{
+	padding: .5em;
+	background: turquoise;
+	color: white;
+    display: inline-block;
+    width: 20%;
+    border: none;
+}
+section.links {
+	padding: .5em;
+	background: turquoise;
+	color: white;
+    display: inline-block;
+    width: 20%;
+    border: none;
+    clear: both;
+}
+footer {
+    clear: both;
+    border-top: 1px solid gray;
+	text-align: center;
+	font-size: .8em;
+	line-height: 4em;
+	margin-top: 1em;
+    padding: 2em;
+}
+footer a{
+    color: aqua;
+}
+blockquote {
+	font-style: italic;
+}
+div {
+    color: lightcyan;
+    background-position: center center, 20% 80%, top left;
+    background-origin: border-box, content-box, border-box;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+figure {
+    display: inline-block;
+    margin: .25%;
+}
+figurecaption {
+    display: inline-block;
+}
+img {
+    width: 100%;
+}
+nav {
+    clear: both;
+    z-index: 2;
+}
+article {
+    float: left;
+    width: 60%;
+    margin: 5%;
+}
+p.disclaimer {
+    font-size: 0.3em;
+}
+
+/* START EMBED RESPONSIVELY STYLES */
+
+.embed-container {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* END EMBED RESPONSIVELY STYLES */
+
+/* END GLOBAL RULES */
+
+/* START LARGE DESKTOP - RESPONSIVE RULES */
+@media (min-width:1600px) and (max-width:4000px){
+    section.socialsmallscreen {
+        display: none;
+    }
+}
+
+/* END LARGE DESKTOP - RESPONSIVE RULES */
+
+/* START SMALL DESKTOP - RESPONSIVE RULES */
+@media (min-width:1025px) and (max-width:1599px) {
+    aside, section.turqtop, {
+        width: 18%;
+    }
+    section.turqbottom, section.links {
+        width: 20%;
+    }
+    h1 {
+        font-size: 3.9em;
+    }
+    section {
+        margin: .5em;
+    }
+    section.main {
+        width: 48%;
+    }
+    section.socialsmallscreen {
+        display: none;
+    }
+    ul {
+        font-size: 80%;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+/* END SMALL DESKTOP - RESPONSIVE RULES */
+
+/* START SMALL LAPTOP - RESPONSIVE RULES */
+@media (min-width:769px) and (max-width:1024px) {
+    aside, section.turqtop, section.turqbottom, section.links {
+        width: 20%;
+        font-size: .9em;
+        margin: .7em;
+        padding: .5em;
+    }
+    section.turqbottom, section.links{
+        width: 18%
+    }
+    h1 {
+        font-size: 2.9em;
+    }
+    section {
+        margin: .5em;
+    }
+    section.main {
+        width: 43%;
+        margin-right: 0;
+    }
+    section.socialsmallscreen {
+        display: none;
+    }
+    ul {
+        font-size: 80%;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+/* END SMALL LAPTOP - RESPONSIVE RULES */
+
+/* START TABLET - RESPONSIVE RULES */
+
+@media (min-width:426px) and (max-width:768px) {
+    aside, section.turqtop, section.turqbottom, section.links {
+        width: 38%;
+        font-size: .9em;
+        margin: .7em;
+        padding: .5em;
+    }
+    section.links {
+        height: 13em;
+    }
+    header h1 {
+        width: 60%;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    header img {
+        width: 40%;
+    }
+    section {
+        width: 85%;
+        font-size: 0.75em;
+    }
+    section.main {
+        width: 90%;
+        margin: 0.5em;
+    }
+    section.socialdesktop {
+        display: none;
+    }
+    aside.menu {
+        width: 95%;
+    }
+    ul:not(:first-child) {
+        display: none;
+    }
+}
+
+/* END TABLET - RESPONSIVE RULES */
+
+/* START PHONE - RESPONSIVE RULES */
+
+@media all and (max-width:425px) {
+    
+    div.wrapper {
+        background:rgb(242,133,0);
+        width:100%;
+        margin:auto;
+    }
+    aside, section.turqtop, section.turqbottom, section.links {
+        width: 90%;
+        font-size: .9em;
+        margin: .7em;
+        padding: .5em;
+    }
+    header h1 {
+        width: 60%;
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    header img {
+        width: 40%;
+    }
+    article {
+        width: 90%;
+        font-size: 0.65em;
+    }
+    section {
+        width: 85%;
+        font-size: 0.65em;
+    }
+    section.main {
+        width: 90%;
+        margin: 0.5em;
+    }
+    section.socialsmallscreen {
+        width: 90%;
+        font-size: 0.8em;
+    }
+    section.socialdesktop {
+        display: none;
+    }
+    aside.menu {
+        width: 95%;
+    }
+    ul:not(:first-child) {
+        display: none;
+    }
+}
+
+/* END PHONE - RESPONSIVE RULES */
